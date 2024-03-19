@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Species Predictor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            margin-top: 50px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px auto;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            display: block;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px auto;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fish Species Predictor</h1>
+        <form action="/predict" method="post">
+            <label for="weight">Weight:</label>
+            <input type="text" id="weight" name="weight" placeholder="Enter Weight">
+            <label for="length1">Length1:</label>
+            <input type="text" id="length1" name="length1" placeholder="Enter Length1">
+            <label for="length2">Length2:</label>
+            <input type="text" id="length2" name="length2" placeholder="Enter Length2">
+            <label for="length3">Length3:</label>
+            <input type="text" id="length3" name="length3" placeholder="Enter Length3">
+            <label for="height">Height:</label>
+            <input type="text" id="height" name="height" placeholder="Enter Height">
+            <label for="width">Width:</label>
+            <input type="text" id="width" name="width" placeholder="Enter Width">
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
