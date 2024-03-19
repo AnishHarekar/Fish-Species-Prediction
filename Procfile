@@ -1,1 +1,1 @@
-web: gunicorn app:fish_species_prediction
+web: gunicorn fish_species_prediction:app
